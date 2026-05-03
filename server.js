@@ -14,6 +14,10 @@ process.on("unhandledRejection", (err) => {
 
 const PORT = process.env.PORT || 5000;
 
+// app.listen(PORT, () => {
+//   console.log(`Server running on port ${PORT} 🚀`);
+// });
+
 console.log(`Server running on port ${PORT} 🚀`);
 console.log("Cloud:", process.env.CLOUD_NAME);
 console.log("Key:", process.env.CLOUD_API_KEY);
