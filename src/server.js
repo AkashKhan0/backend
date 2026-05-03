@@ -21,6 +21,7 @@ app.use(
       "http://localhost:3000",
       "http://localhost:3001",
       "https://medicaladmin-ashen.vercel.app",
+      "https://medical.aplusmartbd.com",
     ],
     credentials: true,
   }),
