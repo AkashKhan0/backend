@@ -84,7 +84,7 @@ router.post("/", async (req, res) => {
 
     /* ================= SEND EMAIL ================= */
     await transporter.sendMail({
-      from: `"Aplusmart Website" <${process.env.EMAIL_USER}>`,
+      from: `"Aplusmart BD Medical & Surgical" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
       subject,
       html,
