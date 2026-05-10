@@ -47,8 +47,8 @@ router.post("/", async (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: process.env.SMTP_EMAIL,
-        pass: process.env.SMTP_PASS,
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
@@ -84,8 +84,8 @@ router.post("/", async (req, res) => {
 
     /* ================= SEND EMAIL ================= */
     await transporter.sendMail({
-      from: `"Aplusmart Website" <${process.env.SMTP_EMAIL}>`,
-      to: process.env.SMTP_EMAIL,
+      from: `"Aplusmart Website" <${process.env.EMAIL_USER}>`,
+      to: process.env.EMAIL_USER,
       subject,
       html,
     });
